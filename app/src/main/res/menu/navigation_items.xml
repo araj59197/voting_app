@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/Aboutus"
+        android:title="About Us"
+        android:icon="@drawable/baseline_pages_24"
+        />
+
+    <item
+        android:id="@+id/admin"
+        android:title="Admin Login"
+        android:icon="@drawable/baseline_admin_panel_settings_24"/>
+
+    <item
+        android:id="@+id/userlogin"
+        android:title="User Login"
+        android:icon="@drawable/baseline_verified_user_24"/>
+
+    <item
+        android:id="@+id/Viewres"
+        android:title="View Election Result"
+        android:icon="@drawable/baseline_newspaper_24"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_logout_24"/>
+
+    </group>
+
+</menu>

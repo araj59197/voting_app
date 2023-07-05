@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin"
+    android:background="#45BDB3">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/applogo" />
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADMIN LOGIN"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="200dp"
+        />
+
+
+    <!-- fragment_admin_login.xml -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:inputType="textPassword" />
+
+        <Button
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

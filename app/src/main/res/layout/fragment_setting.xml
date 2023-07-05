@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="?attr/actionBarSize"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bgbar"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!-- Add your drawer content here -->
+
+
+
+
+        <include layout="@layout/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/framelayout"
+            android:layout_below="@+id/appbarlayout"/>
+
+        <!-- Your main content view goes here -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+        </RelativeLayout>
+
+        <!-- NavigationView for the drawer -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header_lay"
+            app:menu="@menu/navigation_items"
+            />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</FrameLayout>

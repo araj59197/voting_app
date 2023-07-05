@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Aboutus">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_marginTop="56dp"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:src="@drawable/applogo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to My Voting App! We are dedicated to providing a seamless and secure voting experience to all users. Our mission is to promote democratic participation and ensure the integrity of the voting process.\n\nIf you have any questions or feedback, please don't hesitate to contact us."
+            android:textSize="16sp"
+            android:lineSpacingExtra="8dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/baseline_contacts_24"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For any inquiries or support, please feel free to reach out to us via:"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_email_24"
+                android:layout_marginRight="8dp"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: araj59197@gmail.com"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/common_full_open_on_phone"
+                android:outlineAmbientShadowColor="@color/bluee"
+                android:layout_marginRight="8dp"
+                app:tint="@color/bluee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: +91 7091833975" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
