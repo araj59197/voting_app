@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.myvotingapp'
+    namespace 'com.example.Aditya_Rajmyvotingapp'
     compileSdk 34
 
     defaultConfig {
