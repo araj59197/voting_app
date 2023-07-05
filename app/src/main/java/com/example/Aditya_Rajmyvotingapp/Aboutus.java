@@ -1,4 +1,4 @@
-package com.example.myvotingapp;
+package com.example.Aditya_Rajmyvotingapp;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
